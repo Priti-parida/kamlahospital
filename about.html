@@ -157,17 +157,16 @@
                     <!-- Hidden "Our Journey" and "Our Purpose" sections -->
                     <div id="more-content" style="display: none;">
                         <h3 class="mb-4">Our Journey</h3>
-                        <p>Founded in October 2018, Kamla Women's Hospital is the vision of two well-trained and
-                            experienced
-                            super-specialists, Dr. Sushma Purohit, a Gynecologic Oncologist, and Dr. Dipak Purohit, a
-                            Surgical Gastroenterologist. After years of working in prominent corporate hospitals and
-                            receiving specialized training from esteemed institutions like TATA Memorial Hospital,
-                            Mumbai,
-                            and Gujarat Cancer and Research Institute, Ahmedabad, they were inspired to create a
-                            facility
-                            that catered to patients from smaller towns who struggled to access life-saving cancer
-                            surgeries
-                            and treatments due to financial constraints.</p>
+                        <p>Founded in October 2018, Kamla Women's Hospital is the vision of two 
+                            well-trained and experienced super-specialists, Dr. Sushma Purohit, a
+                             Gynecologic Oncologist, and Dr. Dipak Purohit, a Surgical Gastroenterologist.
+                              After years of working in prominent corporate hospitals and receiving specialized 
+                              training from esteemed institutions like TATA Memorial Hospital, Mumbai, and Gujarat
+                               Cancer and Research Institute, Ahmedabad, they were inspired to create a facility 
+                               that catered to patients from smaller towns who struggled to access life-saving cancer
+                                surgeries and treatments due to financial constraints. With a focus on providing affordable, 
+                                evidence-based care, Kamla Women's Hospital has since made a profound impact, treating a 
+                            significant number of patients from across Chhattisgarh and neighboring regions. </p>
 
                         <h3 class="mb-4">Our Purpose</h3>
                         <p>We are committed to providing dedicated, trusted, and affordable healthcare to all. Our
@@ -179,7 +178,7 @@
 
                     <!-- Read More/Read Less button -->
                     <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="javascript:void(0);" id="toggle-btn"
-                        onclick="toggleJourney()">Read More</a>
+                    onclick="toggleContent('more-content')">Read More</a>
                 </div>
 
                 <!-- JavaScript to toggle "Read More/Read Less" -->
@@ -303,66 +302,87 @@
     </div>
     <!-- Feature End -->
 
+  <!-- Team Section Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- Image Section -->
-                <div class="col-lg-4">
-                    <img src="img/team-4.jpg" class="img-fluid mb-3" alt="Dr. Dipak Purohit" style="width: 100%; max-width: 250px; height: auto;">
-                </div>
-                <!-- Content Section -->
-                <div class="col-lg-8">
-                    <h2>Dr. Dipak Purohit</h2>
-                    <h4>Senior Surgical Gastroenterologist</h4>
-                    <p>Dr. Dipak Purohit is a Senior Surgical Gastroenterologist dedicated to establishing a comprehensive Gastro Disease Centre in Raipur, Chhattisgarh, ensuring accessible and affordable gastroenterological services. His initiatives have eliminated the need for patients to seek treatment outside the state for liver, pancreas, biliary, and gastrointestinal conditions.</p>
-    
-                    <p>As a recognized faculty member at national conferences, he contributes to medical education through lectures, CMEs, and mass awareness programs. Dr. Purohit specializes in minimally invasive surgery, GI oncosurgery, bariatric surgery, and organ transplantation.</p>
-    
-                    <p>Trained extensively at Tata Memorial Cancer Hospital in Mumbai, he is among the most qualified surgical gastroenterologists in Chhattisgarh, with expertise in procedures like total esophagectomy, Whipple’s procedure, and laparoscopic surgeries. His experience includes managing gastrointestinal bleeding, hepato-biliary and pancreatic surgeries, and emergency abdominal procedures, all while prioritizing excellent patient outcomes.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container" style="margin: 10px 0px 0px 0px;">
-            <div class="row g-5 align-items-center">
-                <!-- Image Section -->
-                <div class="col-lg-4">
-                    <img src="img/team-4.jpg" class="img-fluid mb-3" alt="Dr. Sushma Purohit" style="width: 100%; max-width: 250px; height: auto;">
-                </div>
-                <!-- Content Section -->
-                <div class="col-lg-8">
-                    <h2>Dr. Sushma Purohit</h2>
-                    <h4>Senior Consultant in Gynecologic Oncology & Obstetrics</h4>
-                    <p>Dr. Sushma Purohit is a Senior Consultant specializing in Gynecologic Oncology and Obstetrics with over a decade of experience. She is dedicated to providing comprehensive care for female patients, focusing on early diagnosis and screening for breast and cervical cancers.</p>
-        
-                    <p>She earned her MBBS in 2001 from Pt. Jawahar Lal Nehru Medical College, followed by an MD in Obstetrics & Gynecology from Smt. NHL Medical College, Ahmedabad. Dr. Purohit completed a Fellowship in Gynecologic Oncology at the Gujarat Cancer Hospital and received advanced training in Obstetric Ultrasound and infertility.</p>
-        
-                    <h4>Areas of Expertise:</h4>
-                    <ul>
-                        <li><b>Gynecologic Oncology:</b> Evidence-based treatment for breast, cervical, endometrial, and ovarian cancers, including complex surgical procedures.</li>
-                        <li><b>Preventive Care:</b> Screening strategies for cervical cancer and management of gynecological cancer emergencies.</li>
-                        <li><b>Minimally Invasive Surgery:</b> Laparoscopic procedures for reduced recovery times.</li>
-                        <li><b>Urogynecology:</b> Treatment of pelvic floor dysfunction and urinary incontinence.</li>
-                        <li><b>Infertility Treatment:</b> Comprehensive Level 1 and Level 2 infertility services.</li>
-                        <li><b>Obstetrics:</b> Management of high-risk pregnancies, painless deliveries, recurrent pregnancy loss, and family planning.</li>
-                    </ul>
-        
-                    <h4>Affiliations:</h4>
-                    <ul>
-                        <li>Association of Gynecologic Oncologists of India (AGOI)</li>
-                        <li>Raipur Obstetrics and Gynecological Society (ROGS)</li>
-                        <li>Federation of Obstetricians and Gynaecologists Society of India (FOGSI)</li>
-                        <li>Indian Medical Association (IMA) - Life Membership</li>
-                        <li>Chhattisgarh Medical Council</li>
-                        <li>Madhya Pradesh Medical Council</li>
-                        <li>Gujarat Medical Council, Ahmedabad</li>
-                    </ul>
+            <!-- Dr. Dipak Purohit Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-md-4">
+                            <img src="img/team-4.jpg" class="img-fluid" alt="Dr. Dipak Purohit">
+                        </div>
+                        <!-- Content Section -->
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Dr. Dipak Purohit</h2>
+                                <h4 class="card-subtitle mb-2">Senior Surgical Gastroenterologist</h4>
+                                <p class="card-text">Dr. Dipak Purohit is a Senior Surgical Gastroenterologist dedicated to establishing a comprehensive Gastro Disease Centre in Raipur, Chhattisgarh.</p>
+                                
+                                <!-- Hidden Content for "Read More" -->
+                                <div id="more-content-dipak" style="display: none;">
+                                    <p>His initiatives have eliminated the need for patients to seek treatment outside the state for liver, pancreas, biliary, and gastrointestinal conditions.</p>
+                                    <p>Dr. Purohit specializes in minimally invasive surgery, GI oncosurgery, bariatric surgery, and organ transplantation. Trained extensively at Tata Memorial Cancer Hospital in Mumbai, he is among the most qualified surgical gastroenterologists in Chhattisgarh.</p>
+                                </div>
+                                
+                                <!-- Read More/Read Less button -->
+                                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="javascript:void(0);" id="toggle-btn-dipak" onclick="toggleContent('more-content-dipak', 'toggle-btn-dipak')">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Dr. Sushma Purohit Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-md-4">
+                            <img src="img/team-4.jpg" class="img-fluid" alt="Dr. Sushma Purohit">
+                        </div>
+                        <!-- Content Section -->
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Dr. Sushma Purohit</h2>
+                                <h4 class="card-subtitle mb-2">Senior Consultant in Gynecologic Oncology & Obstetrics</h4>
+                                <p class="card-text">Dr. Sushma Purohit is a Senior Consultant specializing in Gynecologic Oncology and Obstetrics with over a decade of experience.</p>
+                                
+                                <!-- Hidden Content for "Read More" -->
+                                <div id="more-content-sushma" style="display: none;">
+                                    <h4>Areas of Expertise:</h4>
+                                    <ul>
+                                        <li>Gynecologic Oncology: Evidence-based treatment for breast, cervical, endometrial, and ovarian cancers.</li>
+                                        <li>Preventive Care: Screening strategies for cervical cancer.</li>
+                                        <li>Minimally Invasive Surgery: Laparoscopic procedures.</li>
+                                        <li>Urogynecology: Treatment of pelvic floor dysfunction.</li>
+                                    </ul>
+                                    <h4>Affiliations:</h4>
+                                    <ul>
+                                        <li>Association of Gynecologic Oncologists of India (AGOI)</li>
+                                        <li>Raipur Obstetrics and Gynecological Society (ROGS)</li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Read More/Read Less button -->
+                                <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="javascript:void(0);" id="toggle-btn-sushma" onclick="toggleContent('more-content-sushma', 'toggle-btn-sushma')">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
     </div>
+</div>
+<!-- Team Section End -->
+
+    <!-- Bootstrap JS and dependencies (if not already included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     
     <!-- Team End -->
         
@@ -389,21 +409,19 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-light mb-4">Our speciality </h5>
-                    <a class="btn btn-link" href="">General Surgery </a>
-                    <a class="btn btn-link" href=""> Laparoscopic Surgery</a>
-                    <a class="btn btn-link" href="">Gastrointestinal Surgery</a>
-                    <a class="btn btn-link" href=""> Maternity Services</a>
-                    <a class="btn btn-link" href="">Infertility Services</a>
-                    <a class="btn btn-link" href="">Cosmetic Gynecology</a>
+                    <a class="btn btn-link" href="generalsurgery.html">General Surgery </a>
+                    <a class="btn btn-link" href="laposurgery.html"> Laparoscopic Surgery</a>
+                    <a class="btn btn-link" href="gastrosurgery.html">Gastrointestinal Surgery</a>
+                    <a class="btn btn-link" href="maternitysurgery.html"> Maternity Services</a>
+                    <a class="btn btn-link" href="infertility.html">Infertility Services</a>
+                    <a class="btn btn-link" href="cosmo.html">Cosmetic Gynecology</a>
 
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+               
                 </div>
                 <!-- <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
@@ -454,16 +472,17 @@
 
 </html>
 <script>
-    function toggleJourney() {
-        var moreContent = document.getElementById("more-content");
-        var btnText = document.getElementById("toggle-btn");
+function toggleContent(contentId, btnId) {
+    var moreContent = document.getElementById(contentId);
+    var btnText = document.getElementById(btnId);
 
-        if (moreContent.style.display === "none") {
-            moreContent.style.display = "block";
-            btnText.textContent = "Read Less";
-        } else {
-            moreContent.style.display = "none";
-            btnText.textContent = "Read More";
-        }
+    if (moreContent.style.display === "none") {
+        moreContent.style.display = "block";
+        btnText.textContent = "Read Less";
+    } else {
+        moreContent.style.display = "none";
+        btnText.textContent = "Read More";
     }
+}
+
 </script>
