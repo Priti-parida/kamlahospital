@@ -142,6 +142,45 @@
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 1.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Maternity Services</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 2.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Laparoscopic Surgery</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 3.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Infertility Services</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 4.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">General Surgery</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 5.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Gastrointestinal Surgery</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/mainimages/Carousel - 6.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Cosmetic Gynecology</h1>
+                        </div>
+                    </div>
+                </div> -->
+
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="img/mainimages/Carousel - 1.jpeg" alt="">
@@ -170,15 +209,15 @@
                     <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="img/mainimages/Carousel - 5.jpeg" alt="">
                         <div class="owl-carousel-text">
-                            <h1 class="display-1 text-white mb-0">Gastrointestinal Surger</h1>
+                            <h1 class="display-1 text-white mb-0">Gastrointestinal Surgery</h1>
                         </div>
-                    </div> <div class="owl-carousel-item position-relative">
+                    </div>
+                    <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="img/mainimages/Carousel - 6.jpeg" alt="">
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0">Cosmetic Gynecology</h1>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -724,7 +763,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
@@ -743,4 +782,11 @@
             btnText.textContent = "Read More";
         }
     }
+    document.addEventListener('DOMContentLoaded', function() {
+    var myCarousel = document.querySelector('#headerCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000, // 3 seconds
+        ride: 'carousel'
+    });
+});
 </script>
