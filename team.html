@@ -372,5 +372,28 @@
             btnText.textContent = "Read More";
         }
     }
+    document.addEventListener("DOMContentLoaded", function () {
+    const dropdownToggle = document.querySelector('.nav-link.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
 
+    // Function to toggle the dropdown state
+    function toggleDropdown(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const isOpen = dropdownMenu.classList.contains('show');
+
+        // Toggle the classes and aria-expanded attribute
+        if (isOpen) {
+            dropdownToggle.classList.remove('show');
+            dropdownToggle.setAttribute('aria-expanded', 'false');
+            dropdownMenu.classList.remove('show');
+        } else {
+            dropdownToggle.classList.add('show');
+            dropdownToggle.setAttribute('aria-expanded', 'true');
+            dropdownMenu.classList.add('show');
+        }
+    }
+
+    // Add click event listener to the dropdown toggle
+    dropdownToggle.addEventListener('click', toggleDropdown);
+});
 </script>
