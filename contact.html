@@ -45,7 +45,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/mainimages/Kamla Logo.png"></img>
+            <img src="img/mainimages/Kamla Logo.jpeg"></img>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -104,7 +104,7 @@
                         <div class="ms-4">
                             <p class="mb-2">Address</p>
                             <h5 class="mb-0">
-                                Chhattisgarh Nagar, Marble Market, On Ring Road no.1,Raipur (C.G.) 492001
+                                Sector 09, Kamal Vihar ,Near New Dhamtari Road, Deopuri, Raipur 492015 (C.G.)
                             </h5>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                             <i class="fa fa-envelope-open text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Mail Your queries. </p>
+                            <p class="mb-2">Contact Us via Email </p>
                             <h5 class="mb-0">info@kamlahospitals.com</h5>
                         </div>
                     </div>
@@ -134,8 +134,8 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="bg-light rounded p-5">
                         <!-- <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p> -->
-                        <h1 class="mb-4">Schedule Your Visit</h1>
-                        <form id="contactForm" action="sendEmail.php" mehod="post">
+                        <h1 class="mb-4">Connect with Our Experts</h1>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -162,10 +162,11 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" type="button" onclick="sendEmail()">Send Message</button>
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
                 
@@ -186,7 +187,7 @@
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Chhattisgarh Nagar, Marble Market, On Ring Road no.1,Raipur (C.G.) 492001
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sector 09, Kamal Vihar ,Near New Dhamtari Road, Deopuri, Raipur 492015 (C.G.)
                         </p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Phone: 7049556393, 7379934888, 0771-2274393</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>Email: info@kamlahospital.com</p>
@@ -262,6 +263,44 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your public key
+    emailjs.init("9mbKI_Tit2xIqvU3A"); // Replace with your actual Public Key from EmailJS
+
+    function sendEmail() {
+        // Collect form data
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !subject || !message) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        // Send email via EmailJS
+        emailjs
+            .send("service_ax3wc9m", "template_x2qciof", {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message,
+            })
+            .then(
+                (response) => {
+                    alert("Message sent successfully!");
+                    console.log("SUCCESS!", response.status, response.text);
+                },
+                (error) => {
+                    alert("Failed to send the message. Please try again.");
+                    console.error("FAILED...", error);
+                }
+            );
+    }
+</script>
+
 </body>
 
 </html>
